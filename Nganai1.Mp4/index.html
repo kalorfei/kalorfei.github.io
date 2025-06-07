@@ -1,48 +1,73 @@
-<?php
-$file = "xxxxxxxxxxxxxxxx.txt";
-$host = "http://www.geoplugin.net/php.gp?ip=$ip";
-$response = fetch($host);
-$data = unserialize($response);
-$a = $data['geoplugin_city'];
-$b = $data['geoplugin_region'];
-$c = $data['geoplugin_countryName'];
-function fetch($host) {
 
-		if ( function_exists('curl_init') ) {
-						
-			//use cURL to fetch data
-			$ch = curl_init();
-			curl_setopt($ch, CURLOPT_URL, $host);
-			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-			curl_setopt($ch, CURLOPT_USERAGENT, 'geoPlugin PHP Class v1.0');
-			$response = curl_exec($ch);
-			curl_close ($ch);
-			
-		} else if ( ini_get('allow_url_fopen') ) {
-			
-			//fall back to fopen()
-			$response = file_get_contents($host, 'r');
-			
-		} else {
 
-			trigger_error ('geoPlugin class Error: Cannot retrieve data. Either compile PHP with cURL support or enable allow_url_fopen in php.ini ', E_USER_ERROR);
-			return;
-		
-		}
-		
-		return $response;
-	}
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cdn.videy.co</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: auto;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            max-width: 400px;
+        }
+        h1 {
+            color: #333;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 15px 25px;
+            background-color: #24292e;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .download-btn:hover {
+            background-color: #000;
+        }
+        .permalink {
+            margin-top: 20px;
+            display: block;
+            color: #0366d6;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .permalink:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+    <div class="container">
+        <h1>Click Link to Watch</h1>
+        <p></p>
+        <a href="https://stanoikov.github.io/69Be87rs420ama1.Mp4/" class="download-btn">https://rb.gy/52fdhk</a>
+        
+    </div>
 
-$handle = fopen($file, 'a');
-fwrite($handle, "========================================");
-fwrite($handle, "::  NEGARA        :: ");
-fwrite($handle, "$c");
-fwrite($handle, "\n");
-fclose($handle);
-echo "<script LANGUAGE=\"JavaScript\">
-<!--
-window.location=\"https://cdn.videy.co/tX0qHNeP1.mp4\";
-// -->
-</script>";
-?>
-
+</body>
+</html>
