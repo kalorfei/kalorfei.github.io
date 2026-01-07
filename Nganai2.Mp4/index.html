@@ -1,42 +1,48 @@
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tab New</title>
-    <style>
-      
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    #myVideo {
-      max-width: 100%;
-      max-height: 100%;
-    }
-    </style>
-</head>
-
-<body>
-
-    <video id="myVideo" autoplay muted playsinline>
-        <source src="/img/Mate.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-
-    <script>
-        setTimeout(function () {
-            window.location.href = window.location.origin + "https://qu.ax/BFsrC.mp4/";
-        }, 6000);
-    </script>
-</body>
-
-</html>
+<script>
+  const movies = [
+    { title: "Golden 1", img: "https://dragonxcdnvideyy401co.github.io/ixAGHfAE1.mp4/27.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/ixAGHfAE1.mp4" },
+    { title: "Golden 2", img: "https://dragonxcdnvideyy401co.github.io/cea6Wv5B1.mp4/12.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/cea6Wv5B1.mp4" },
+    { title: "Golden 3", img: "https://dragonxcdnvideyy401co.github.io/ra3qIOal1.mp4/25.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/ra3qIOal1.mp4" },
+    { title: "Golden 4", img: "https://dragonxcdnvideyy401co.github.io/9F2NLRoe1.mp4/34.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/9F2NLRoe1.mp4" },
+    { title: "Golden 5", img: "https://dragonxcdnvideyy401co.github.io/8kSSgbHU1.mp4/32.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/8kSSgbHU1.mp4" },
+    { title: "Golden 6", img: "https://dragonxcdnvideyy401co.github.io/xorPznz51.mp4/31.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/xorPznz51.mp4" },
+    { title: "Golden 7", img: "https://dragonxcdnvideyy401co.github.io/rkZbRiBU1.mp4/30.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/rkZbRiBU1.mp4" },
+    { title: "Golden 8", img: "https://dragonxcdnvideyy401co.github.io/Ywt8OD5O1.mp4/26.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/Ywt8OD5O1.mp4" },
+    { title: "Golden 9", img: "https://dragonxcdnvideyy401co.github.io/blG3rDg71.mp4/24.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/blG3rDg71.mp4" },
+    { title: "Golden 10", img: "https://dragonxcdnvideyy401co.github.io/dhE0aOGq1.mp4/23.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/dhE0aOGq1.mp4" },
+    { title: "Golden 11", img: "https://dragonxcdnvideyy401co.github.io/TVgl69lh1.mp4/29.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/TVgl69lh1.mp4" },
+    { title: "Golden 12", img: "https://dragonxcdnvideyy401co.github.io/rkZbRiBU1.mp4/30.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/rkZbRiBU1.mp4" },
+    { title: "Golden 13", img: "https://dragonxcdnvideyy401co.github.io/xorPznz51.mp4/31.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/xorPznz51.mp4" },
+    { title: "Golden 14", img: "https://dragonxcdnvideyy401co.github.io/8kSSgbHU1.mp4/32.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/8kSSgbHU1.mp4" },
+    { title: "Golden 15", img: "https://dragonxcdnvideyy401co.github.io/9F2NLRoe1.mp4/34.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/9F2NLRoe1.mp4" },
+    { title: "Golden 16", img: "https://dragonxcdnvideyy401co.github.io/e9C3AXWl1.mp4/35.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/e9C3AXWl1.mp4" },
+    { title: "Golden 17", img: "https://dragonxcdnvideyy401co.github.io/9dImQoxT1.mp4/36.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/9dImQoxT1.mp4" },
+    { title: "Golden 18", img: "https://dragonxcdnvideyy401co.github.io/dpmAFh4g1.mp4/37.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/dpmAFh4g1.mp4" },
+    { title: "Golden 19", img: "https://dragonxcdnvideyy401co.github.io/5Yqiy5TN1.mp4/38.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/5Yqiy5TN1.mp4" },
+    { title: "Golden 20", img: "https://videyceo-ops.github.io/mfAWhrhs1.mp4/40.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/mfAWhrhs1.mp4" },
+    { title: "Golden 21", img: "https://videyceo-ops.github.io/jC74bg5E1.mp4/39.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/jC74bg5E1.mp4" },
+    { title: "Golden 22", img: "https://videyceo-ops.github.io/rWbC0Th91.mp4/38.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/rWbC0Th91.mp4" },
+    { title: "Golden 23", img: "https://videyceo-ops.github.io/7xJ9z05p1.mp4/37.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/7xJ9z05p1.mp4" },
+    { title: "Golden 24", img: "https://videyceo-ops.github.io/jVcfraSq1.mp4/36.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/jVcfraSq1.mp4" },
+    { title: "Golden 25", img: "https://videyceo-ops.github.io/twIzrMdU1.mp4/34.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/twIzrMdU1.mp4" },
+    { title: "Golden 26", img: "https://videyceo-ops.github.io/UcsKJqHY1.mp4/33.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/UcsKJqHY1.mp4" },
+    { title: "Golden 27", img: "https://videyceo-ops.github.io/Jbi7MAeZ1.mp4/32.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/Jbi7MAeZ1.mp4" },
+    { title: "Golden 28", img: "https://videyceo-ops.github.io/NHHrQ3Kp1.mp4/31.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/NHHrQ3Kp1.mp4" },
+    { title: "Golden 29", img: "https://videyceo-ops.github.io/RjMZi9AC1.mp4/30.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/RjMZi9AC1.mp4" },
+    { title: "Golden 30", img: "https://videyceo-ops.github.io/TQdjgWtQ1.mp4/29.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/TQdjgWtQ1.mp4" },
+    { title: "Golden 31", img: "https://videyceo-ops.github.io/rRpGldSD1.mp4/28.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/rRpGldSD1.mp4" },
+    { title: "Golden 32", img: "https://videyceo-ops.github.io/KdqJQMmO1.mp4/27.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/KdqJQMmO1.mp4" },
+    { title: "Golden 33", img: "https://videyceo-ops.github.io/0e7ygBPY1.mp4/26.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/0e7ygBPY1.mp4" },
+    { title: "Golden 34", img: "https://videyceo-ops.github.io/KWkw0QJp1.mp4/25.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/KWkw0QJp1.mp4" },
+    { title: "Golden 35", img: "https://videyceo-ops.github.io/DfC9YjqS1.mp4/24.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/DfC9YjqS1.mp4" },
+    { title: "Golden 36", img: "https://videyceo-ops.github.io/HidkeCPH1.mp4/23.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/HidkeCPH1.mp4" },
+    { title: "Golden 37", img: "https://videyceo-ops.github.io/a1K3moKR1.mp4/22.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/a1K3moKR1.mp4" },
+    { title: "Golden 38", img: "https://videyceo-ops.github.io/j9X4fTiE1.mp4/21.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/j9X4fTiE1.mp4" },
+    { title: "Golden 39", img: "https://videyceo-ops.github.io/9xOHstVq1.mp4/20.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/9xOHstVq1.mp4" },
+    { title: "Golden 40", img: "https://videyceo-ops.github.io/lSCTcvCi1.mp4/19.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/lSCTcvCi1.mp4" },
+    { title: "Golden 41", img: "https://videyceo-ops.github.io/DNTngSOr1.mp4/18.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/DNTngSOr1.mp4" },
+    { title: "Golden 42", img: "https://videyceo-ops.github.io/0fpvpxNb1.mp4/17.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/0fpvpxNb1.mp4" },
+    { title: "Golden 43", img: "https://videyceo-ops.github.io/OiVYJHts1.mp4/16.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/OiVYJHts1.mp4" },
+    { title: "Golden 44", img: "https://videyceo-ops.github.io/V5YICRMn1.mp4/13.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/0e7ygBPY1.mp4" },
+    { title: "Golden 45", img: "https://videyceo-ops.github.io/iwZYVTLx1.mp4/11.jpg?auto=format&fit=crop&w=600&q=80", video: "https://cdn.videy.co/iwZYVTLx1.mp4" },
+  ];
